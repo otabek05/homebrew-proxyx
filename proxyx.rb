@@ -11,7 +11,7 @@ class Proxyx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/otabek05/ProxyX/releases/download/v0.2.0/proxyx_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b73607c8895fb6b66cc2b3ca498b82628f853d4ddb09fdb00b0bdcc51d2b6bc5"
+      sha256 "dcbfd052756c9e07861fbf7cf1e7096398fafb2a2372ca22076597c873960e0a"
 
       def install
         bin.install "proxyx"
@@ -20,7 +20,7 @@ class Proxyx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/otabek05/ProxyX/releases/download/v0.2.0/proxyx_0.2.0_darwin_arm64.tar.gz"
-      sha256 "70f3753c915b5be8441f4caf6bcf1a9efc9fe828a2baaf7d47b96d37d5495f63"
+      sha256 "c661e9b3b46fed20144b13384c4867ad8f43bb73cfe04d89a984798764ab583c"
 
       def install
         bin.install "proxyx"
@@ -32,7 +32,7 @@ class Proxyx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/otabek05/ProxyX/releases/download/v0.2.0/proxyx_0.2.0_linux_amd64.tar.gz"
-      sha256 "8b986bea24f5d5be0b2761afb977ca166e2d2ef47f5d3158bb3ea88e6b13e252"
+      sha256 "a55eb59efd2d3d8e56dc1fbda1b9d8d97ec2f2eca1d4f9d2836e600ad4c837ae"
       def install
         bin.install "proxyx"
         etc.install Dir["web"] => "proxyx"
@@ -40,7 +40,7 @@ class Proxyx < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/otabek05/ProxyX/releases/download/v0.2.0/proxyx_0.2.0_linux_arm64.tar.gz"
-      sha256 "e955f38a53cd1914df61e107773342041cddd94baa618ef95f0cb78996db4ab5"
+      sha256 "c0c36323aaacdf54c407c141614c05ca8711d2bbf73a6140530e34665f65f07c"
       def install
         bin.install "proxyx"
         etc.install Dir["web"] => "proxyx"
